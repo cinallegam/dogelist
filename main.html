@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Cal</title>
+      <link rel="icon" type="image/x-icon" href="favicon.ico" />
+      <script src="./dist/jquery-3.6.0.min.js"></script>
+      <script src="./dist/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="./dist/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="flex-container mr-4 ml-4">
+      <div id="myDIV" class="header">
+        <center>
+          <div class="h1-con row">
+            <img class="dogecoin-L" src="dogecoin-logo.svg" alt="dogecoin logo">
+            <h1>DOGECOIN</h1>
+          </div>
+          <div class="input-group mb-2 col-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Price</span>
+            </div>
+            <input type="text" id="myPrice" OnKeyPress="chkNumber(event)" class="form-control" placeholder="Ex. 100" >   
+          </div>
+          <div class="input-group mb-2 mt-2 col-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Volume</span>
+            </div>
+            <input type="text" id="myVolume" class="form-control" placeholder="Ex. 10" >   
+          </div>
+          <div style="color: red;" class="errSt"></div>
+          <div class="wrap">
+            <button onclick="btnAdd()" class="btnAdd">Add</button>
+          </div>
+        </center>
+      </div>
+      <table class="table" id="myTable">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 5%;"></th>
+            <th scope="col">Price</th>
+            <th scope="col">Volume</th>
+            <th scope="col">Total</th>
+            <th scope="col" style="width: 5%;"></th>
+          </tr>
+        </thead>
+        <tbody id="myTbody">
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Total: </th>
+            <th id="sum-price"></th>
+            <th id="sum-volume"></th>
+            <th id="sum-total"></th>
+            <th id="sum-avg"></th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <center>
+      <div style="border-radius: 5px; background-color: black; height: 6rem; width: 22rem; margin-bottom: 10%; margin-top: 3%;"> 
+        <h5 style="color: white; padding-top: 10px;">Average :</h5>
+        <div class="avg">
+          <p class="card-text" id="avg"></p>
+        </div>
+      </div>
+    </center>
+  </body>
+</html>
+<script src="app.js"></script>
