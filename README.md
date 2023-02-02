@@ -23,7 +23,7 @@
 | Feature | Dependency |
 | --- | --- |
 | Lang | JavaScript |
-| HTML | bootstrap, jQuery |
+| HTML | Bootstrap, jQuery |
 
 ##### Quickstart
   1. Open `index.html` file in your browser
