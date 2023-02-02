@@ -4,8 +4,6 @@
 <a href="link"><img src="image.svg" alt="b" width="734"/></a>
 </p> -->
 
-<p align="center"><i>dogelist in action!</i></p>
-
 ### Introduction
 
 `dogelist`, Used to record a list of purchased dogecoins and calculate the average price from the total volume.
